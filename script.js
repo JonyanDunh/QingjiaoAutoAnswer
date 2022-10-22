@@ -13,8 +13,13 @@
 (function () {
     'use strict';
     //竞赛
-
-
+    compelete_quiz()
+    var task=new task
+    task.compelete_task_5
+    task.compelete_task_6
+    task.compelete_task_7
+    task.compelete_task_8
+    task.compelete_task_9
     function compelete_quiz() {
         var datas_quiz = JSON.stringify({
             "list": [
@@ -289,6 +294,25 @@
             datas.push(JSON.stringify({ "courseId": "1345", "examCommitReqDataList": [{ "examId": 1, "answer": "0,2" }, { "examId": 2, "answer": "0,3" }], "exam": "course", "reqtoken": unsafeWindow.__DATA__.reqtoken }))
             datas.push(JSON.stringify({ "courseId": "1344", "examCommitReqDataList": [{ "examId": 1, "answer": 2 }, { "examId": 2, "answer": "0,1,2" }], "exam": "course", "reqtoken": unsafeWindow.__DATA__.reqtoken }))
             datas.push(JSON.stringify({ "courseId": "1283", "examCommitReqDataList": [{ "examId": 1, "answer": 2 }, { "examId": 2, "answer": 3 }, { "examId": 3, "answer": 0 }, { "examId": 4, "answer": 0 }, { "examId": 5, "answer": "0,1" }], "exam": "course", "reqtoken": unsafeWindow.__DATA__.reqtoken }))
+            datas.push(JSON.stringify({
+                "courseId": "1282",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": 3
+                }, {
+                    "examId": 2,
+                    "answer": 2
+                }, {
+                    "examId": 3,
+                    "answer": 1
+                }, {
+                    "examId": 4,
+                    "answer": 3
+                }, {
+                    "examId": 5,
+                    "answer": 1
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
             for (var data of datas) {
                 var xhr = new XMLHttpRequest();
                 xhr.withCredentials = true;
@@ -426,7 +450,95 @@
             }
 
         }
-        
+        compelete_task_9() {
+            var datas = []
+            datas.push(JSON.stringify({
+                "courseId": "1359",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": "0,1,2"
+                }, {
+                    "examId": 2,
+                    "answer": "0,1,2,3"
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
+            datas.push(JSON.stringify({
+                "courseId": "1341",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": "1,2"
+                }, {
+                    "examId": 2,
+                    "answer": "0,1,2,3"
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
+            datas.push(JSON.stringify({
+                "courseId": "1340",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": "0,1,3"
+                }, {
+                    "examId": 2,
+                    "answer": "1,3"
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
+            datas.push(JSON.stringify({
+                "courseId": "1279",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": "0,1"
+                }, {
+                    "examId": 2,
+                    "answer": 2
+                }, {
+                    "examId": 3,
+                    "answer": "0,1,2,3"
+                }, {
+                    "examId": 4,
+                    "answer": "0,1,2,3"
+                }, {
+                    "examId": 5,
+                    "answer": 3
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
+            datas.push(JSON.stringify({
+                "courseId": "1278",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": 2
+                }, {
+                    "examId": 2,
+                    "answer": 0
+                }, {
+                    "examId": 3,
+                    "answer": 0
+                }, {
+                    "examId": 4,
+                    "answer": 0
+                }, {
+                    "examId": 5,
+                    "answer": 1
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
+
+
+
+            for (var data of datas) {
+                var xhr = new XMLHttpRequest();
+                xhr.withCredentials = true;
+
+                xhr.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4) {
+                        console.log(this.responseText);
+                    }
+                });
+                xhr.open("POST", "https://www.2-class.com/api/exam/commit");
+                xhr.setRequestHeader("Content-Type", "application/json");
+
+                xhr.send(data);
+            }
+
+        }
     }
 
     // Your code here...

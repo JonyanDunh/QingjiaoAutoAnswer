@@ -1,3 +1,72 @@
-[
-    
+[{
+	"courseId": "1359",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "0,1,2"
+	}, {
+		"examId": 2,
+		"answer": "0,1,2,3"
+	}],
+	"reqtoken": "e71cbf11-51de-4c2e-99fd-941f034c82ff"
+},
+{
+	"courseId": "1341",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "1,2"
+	}, {
+		"examId": 2,
+		"answer": "0,1,2,3"
+	}],
+	"reqtoken": "e71cbf11-51de-4c2e-99fd-941f034c82ff"
+},{
+	"courseId": "1340",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "0,1,3"
+	}, {
+		"examId": 2,
+		"answer": "1,3"
+	}],
+	"reqtoken": "e71cbf11-51de-4c2e-99fd-941f034c82ff"
+},{
+	"courseId": "1279",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "0,1"
+	}, {
+		"examId": 2,
+		"answer": 2
+	}, {
+		"examId": 3,
+		"answer": "0,1,2,3"
+	}, {
+		"examId": 4,
+		"answer": "0,1,2,3"
+	}, {
+		"examId": 5,
+		"answer": 3
+	}],
+	"reqtoken": "e71cbf11-51de-4c2e-99fd-941f034c82ff"
+},
+{
+	"courseId": "1278",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": 2
+	}, {
+		"examId": 2,
+		"answer": 0
+	}, {
+		"examId": 3,
+		"answer": 0
+	}, {
+		"examId": 4,
+		"answer": 0
+	}, {
+		"examId": 5,
+		"answer": 1
+	}],
+	"reqtoken": "e71cbf11-51de-4c2e-99fd-941f034c82ff"
+}
 ]
