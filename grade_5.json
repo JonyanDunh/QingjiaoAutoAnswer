@@ -1,0 +1,16 @@
+{
+    "list": [
+        {"questionId":3196,"questionContent":"C"},{"questionId":3165,"questionContent":"D"},\
+        {"questionId":3104,"questionContent":"D"},{"questionId":3201,"questionContent":"D"},\
+        {"questionId":3202,"questionContent":"D"},{"questionId":3170,"questionContent":"A"},\
+        {"questionId":3171,"questionContent":"A"},{"questionId":3174,"questionContent":"D"},\
+        {"questionId":3142,"questionContent":"C"},{"questionId":3208,"questionContent":"C"},\
+        {"questionId":3209,"questionContent":"D"},{"questionId":3210,"questionContent":"B"},\
+        {"questionId":3147,"questionContent":"D"},{"questionId":3119,"questionContent":"B"},\
+        {"questionId":3216,"questionContent":"A"},{"questionId":3153,"questionContent":"D"},\
+        {"questionId":3186,"questionContent":"A"},{"questionId":3188,"questionContent":"A"},\
+        {"questionId":3126,"questionContent":"A"},{"questionId":3161,"questionContent":"D"}
+    ],
+    "time": 30,
+    "reqtoken": unsafeWindow.__DATA__.reqtoken
+  }
