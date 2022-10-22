@@ -13,13 +13,7 @@
 (function () {
     'use strict';
     //竞赛
-    compelete_quiz()
-    var task=new task
-    task.compelete_task_5
-    task.compelete_task_6
-    task.compelete_task_7
-    task.compelete_task_8
-    task.compelete_task_9
+
     function compelete_quiz() {
         var datas_quiz = JSON.stringify({
             "list": [
@@ -58,6 +52,27 @@
     class task {
         compelete_task_5() {
             var datas = []
+            datas.push(JSON.stringify({
+
+                "courseId": "1349",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": "0,1,3"
+                }, {
+                    "examId": 2,
+                    "answer": "0,1,2,4"
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
+            datas.push(JSON.stringify({
+                "courseId": "1356",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": "0,2,3"
+                }, {
+                    "examId": 2,
+                    "answer": 1
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
             datas.push(JSON.stringify({
                 "courseId": "1348",
                 "examCommitReqDataList": [{
@@ -161,6 +176,25 @@
                     "answer": 2
                 }], "reqtoken": unsafeWindow.__DATA__.reqtoken
             }))
+            datas.push(JSON.stringify({
+                "courseId": "1326",
+                "examCommitReqDataList": [{
+                    "examId": 1,
+                    "answer": 0
+                }, {
+                    "examId": 2,
+                    "answer": 2
+                }, {
+                    "examId": 3,
+                    "answer": 2
+                }, {
+                    "examId": 4,
+                    "answer": 3
+                }, {
+                    "examId": 5,
+                    "answer": "0,1,2,3"
+                }], "reqtoken": unsafeWindow.__DATA__.reqtoken
+            }))
             for (var data of datas) {
                 var xhr = new XMLHttpRequest();
                 xhr.withCredentials = true;
@@ -178,6 +212,7 @@
 
         }
         compelete_task_6() {
+
             var datas = []
             datas.push(JSON.stringify({
                 "courseId": "1347",
@@ -289,6 +324,7 @@
 
         }
         compelete_task_7() {
+
             var datas = []
             datas.push(JSON.stringify({ "courseId": "1357", "examCommitReqDataList": [{ "examId": 1, "answer": 0 }, { "examId": 2, "answer": "0,1,2" }], "exam": "course", "reqtoken": unsafeWindow.__DATA__.reqtoken }))
             datas.push(JSON.stringify({ "courseId": "1345", "examCommitReqDataList": [{ "examId": 1, "answer": "0,2" }, { "examId": 2, "answer": "0,3" }], "exam": "course", "reqtoken": unsafeWindow.__DATA__.reqtoken }))
@@ -331,6 +367,7 @@
 
         }
         compelete_task_8() {
+
             var datas = []
             datas.push(JSON.stringify({
                 "courseId": "1358",
@@ -451,6 +488,7 @@
 
         }
         compelete_task_9() {
+
             var datas = []
             datas.push(JSON.stringify({
                 "courseId": "1359",
@@ -540,6 +578,12 @@
 
         }
     }
-
+    compelete_quiz()
+    var tasks = new task
+    tasks.compelete_task_5()
+    tasks.compelete_task_6()
+    tasks.compelete_task_7()
+    tasks.compelete_task_8()
+    tasks.compelete_task_9()
     // Your code here...
 })();
