@@ -1,0 +1,108 @@
+[{
+	"courseId": "1358",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "0,1,2"
+	}, {
+		"examId": 2,
+		"answer": 2
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+},
+{
+	"courseId": "1355",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": 1
+	}, {
+		"examId": 2,
+		"answer": 1
+	}, {
+		"examId": 3,
+		"answer": "0,1,2"
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+},
+{
+	"courseId": "1354",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": 2
+	}, {
+		"examId": 2,
+		"answer": 2
+	}, {
+		"examId": 3,
+		"answer": 3
+	}, {
+		"examId": 4,
+		"answer": "1,2"
+	}, {
+		"examId": 5,
+		"answer": "0,1"
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+},
+{
+	"courseId": "1343",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "2,3"
+	}, {
+		"examId": 2,
+		"answer": "1,2"
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+},
+{
+	"courseId": "1342",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": "0,2,3"
+	}, {
+		"examId": 2,
+		"answer": "1,2,3"
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+},
+{
+	"courseId": "1281",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": 1
+	}, {
+		"examId": 2,
+		"answer": 0
+	}, {
+		"examId": 3,
+		"answer": 3
+	}, {
+		"examId": 4,
+		"answer": 2
+	}, {
+		"examId": 5,
+		"answer": "0,1,2,3"
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+},
+{
+	"courseId": "1280",
+	"examCommitReqDataList": [{
+		"examId": 1,
+		"answer": 0
+	}, {
+		"examId": 2,
+		"answer": 0
+	}, {
+		"examId": 3,
+		"answer": 1
+	}, {
+		"examId": 4,
+		"answer": 1
+	}, {
+		"examId": 5,
+		"answer": "0,1,2,3"
+	}],
+	"reqtoken": "bb566fd6-291c-47c4-84d1-e774443cb4ba"
+}
+]
