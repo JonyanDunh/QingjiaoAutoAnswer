@@ -13,23 +13,187 @@
 (function () {
     'use strict';
     //竞赛
+    function randomNum(minNum,maxNum){ 
+        switch(arguments.length){ 
+            case 1: 
+                return parseInt(Math.random()*minNum+1,10); 
+            break; 
+            case 2: 
+                return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10); 
+            break; 
+                default: 
+                    return 0; 
+                break; 
+        } 
+    } 
     function compelete_quiz() {
-        var datas_quiz = JSON.stringify({
-            "list": [
-                { "questionId": 3196, "questionContent": "C" }, { "questionId": 3165, "questionContent": "D" },
-                { "questionId": 3104, "questionContent": "D" }, { "questionId": 3201, "questionContent": "D" },
-                { "questionId": 3202, "questionContent": "D" }, { "questionId": 3170, "questionContent": "A" },
-                { "questionId": 3171, "questionContent": "A" }, { "questionId": 3174, "questionContent": "D" },
-                { "questionId": 3142, "questionContent": "C" }, { "questionId": 3208, "questionContent": "C" },
-                { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
-                { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
-                { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
-                { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
-                { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
-            ],
-            "time": 30,
-            "reqtoken": unsafeWindow.__DATA__.reqtoken
-        });;
+        var rand_choose=randomNum(0,8)
+        var datas_quiz
+        switch(rand_choose){
+            case 0://100分
+                datas_quiz = JSON.stringify({
+                    "list": [
+                        { "questionId": 3196, "questionContent": "C" }, { "questionId": 3165, "questionContent": "D" },
+                        { "questionId": 3104, "questionContent": "D" }, { "questionId": 3201, "questionContent": "D" },
+                        { "questionId": 3202, "questionContent": "D" }, { "questionId": 3170, "questionContent": "A" },
+                        { "questionId": 3171, "questionContent": "A" }, { "questionId": 3174, "questionContent": "D" },
+                        { "questionId": 3142, "questionContent": "C" }, { "questionId": 3208, "questionContent": "C" },
+                        { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
+                        { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                        { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                        { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                        { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                    ],
+                    "time": randomNum(40,300),
+                    "reqtoken": unsafeWindow.__DATA__.reqtoken
+                });
+                break;
+            case 1://95
+                datas_quiz = JSON.stringify({
+                    "list": [
+                        { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                        { "questionId": 3104, "questionContent": "D" }, { "questionId": 3201, "questionContent": "D" },
+                        { "questionId": 3202, "questionContent": "D" }, { "questionId": 3170, "questionContent": "A" },
+                        { "questionId": 3171, "questionContent": "A" }, { "questionId": 3174, "questionContent": "D" },
+                        { "questionId": 3142, "questionContent": "C" }, { "questionId": 3208, "questionContent": "C" },
+                        { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
+                        { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                        { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                        { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                        { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                    ],
+                    "time": randomNum(40,300),
+                    "reqtoken": unsafeWindow.__DATA__.reqtoken
+                });
+                break;
+            case 2://90
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "D" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "A" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "C" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+            case 3://85
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "B" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "A" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "C" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+            case 4://80
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "B" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "B" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "C" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+            case 5://75
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "B" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "B" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "B" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "D" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+            case 6://70
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "B" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "B" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "B" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "B" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "D" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+            case 7://65
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "B" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "B" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "B" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "B" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "B" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "A" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+            case 8://60
+            datas_quiz = JSON.stringify({
+                "list": [
+                    { "questionId": 3196, "questionContent": "B" }, { "questionId": 3165, "questionContent": "D" },
+                    { "questionId": 3104, "questionContent": "B" }, { "questionId": 3201, "questionContent": "D" },
+                    { "questionId": 3202, "questionContent": "B" }, { "questionId": 3170, "questionContent": "A" },
+                    { "questionId": 3171, "questionContent": "B" }, { "questionId": 3174, "questionContent": "D" },
+                    { "questionId": 3142, "questionContent": "B" }, { "questionId": 3208, "questionContent": "C" },
+                    { "questionId": 3209, "questionContent": "B" }, { "questionId": 3210, "questionContent": "B" },
+                    { "questionId": 3147, "questionContent": "B" }, { "questionId": 3119, "questionContent": "B" },
+                    { "questionId": 3216, "questionContent": "B" }, { "questionId": 3153, "questionContent": "D" },
+                    { "questionId": 3186, "questionContent": "A" }, { "questionId": 3188, "questionContent": "A" },
+                    { "questionId": 3126, "questionContent": "A" }, { "questionId": 3161, "questionContent": "D" }
+                ],
+                "time": randomNum(40,300),
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });
+            break;
+        }
+        
 
 
         var xhr = new XMLHttpRequest();
