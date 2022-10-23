@@ -13,7 +13,6 @@
 (function () {
     'use strict';
     //竞赛
-
     function compelete_quiz() {
         var datas_quiz = JSON.stringify({
             "list": [
@@ -45,9 +44,257 @@
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.send(datas_quiz);
     }
-    class exams {
+    class final_exams {
+        compelete_final_exam_9() {
+            var datas_quiz = JSON.stringify({
+                "list": [{
+                    "questionId": 98,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 99,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 100,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 101,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 102,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 103,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 104,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 105,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 106,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 107,
+                    "questionContent": "C"
+                }],
+                "exam": "final",
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });;
 
 
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+                }
+            });
+            xhr.open("POST", "https://www.2-class.com/api/question/commit");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(datas_quiz);
+        }
+        compelete_final_exam_8() {
+            var datas_quiz = JSON.stringify({
+                "list": [{
+                    "questionId": 58,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 59,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 60,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 61,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 62,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 63,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 64,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 65,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 66,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 67,
+                    "questionContent": "B"
+                }],
+                "exam": "final",
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });;
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+                }
+            });
+            xhr.open("POST", "https://www.2-class.com/api/question/commit");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(datas_quiz);
+        }
+        compelete_final_exam_7() {
+            var datas_quiz = JSON.stringify({
+                "list": [{
+                    "questionId": 58,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 59,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 60,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 61,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 62,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 63,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 64,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 65,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 66,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 67,
+                    "questionContent": "B"
+                }],
+                "exam": "final",
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });;
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+                }
+            });
+            xhr.open("POST", "https://www.2-class.com/api/question/commit");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(datas_quiz);
+        }
+        compelete_final_exam_6() {
+            var datas_quiz = JSON.stringify({
+                "list": [{
+                    "questionId": 168,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 169,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 170,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 171,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 172,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 173,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 174,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 175,
+                    "questionContent": "B"
+                }, {
+                    "questionId": 176,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 177,
+                    "questionContent": "B"
+                }],
+                "exam": "final",
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });;
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+                }
+            });
+            xhr.open("POST", "https://www.2-class.com/api/question/commit");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(datas_quiz);
+        }
+        compelete_final_exam_5() {
+            var datas_quiz = JSON.stringify({
+                "list": [{
+                    "questionId": 635,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 636,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 637,
+                    "questionContent": "D"
+                }, {
+                    "questionId": 638,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 639,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 640,
+                    "questionContent": "A"
+                }, {
+                    "questionId": 641,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 642,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 643,
+                    "questionContent": "C"
+                }, {
+                    "questionId": 644,
+                    "questionContent": "A"
+                }],
+                "exam": "final",
+                "reqtoken": unsafeWindow.__DATA__.reqtoken
+            });;
+
+
+            var xhr = new XMLHttpRequest();
+            xhr.withCredentials = true;
+
+            xhr.addEventListener("readystatechange", function () {
+                if (this.readyState === 4) {
+                    console.log(this.responseText);
+                }
+            });
+            xhr.open("POST", "https://www.2-class.com/api/question/commit");
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.send(datas_quiz);
+        }
     }
     class task {
         compelete_task_5() {
@@ -578,12 +825,29 @@
 
         }
     }
-    compelete_quiz()
     var tasks = new task
-    tasks.compelete_task_5()
-    tasks.compelete_task_6()
-    tasks.compelete_task_7()
-    tasks.compelete_task_8()
-    tasks.compelete_task_9()
-    // Your code here...
+    var final_exam = new final_exams
+    compelete_quiz()
+    switch (unsafeWindow.__DATA__.userInfo.department.gradeName) {
+        case "五年级":
+            tasks.compelete_task_5()
+            final_exam.compelete_final_exam_5()
+            break;
+        case "六年级":
+            tasks.compelete_task_6()
+            final_exam.compelete_final_exam_6()
+            break;
+        case "七年级":
+            tasks.compelete_task_7()
+            final_exam.compelete_final_exam_7()
+            break;
+        case "八年级":
+            tasks.compelete_task_8()
+            final_exam.compelete_final_exam_8()
+            break;
+        case "九年级":
+            tasks.compelete_task_9()
+            final_exam.compelete_final_exam_9()
+            break;
+    }
 })();
