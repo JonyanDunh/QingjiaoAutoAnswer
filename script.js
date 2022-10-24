@@ -2,8 +2,8 @@
 // @name         fuck-qingjiao
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  干掉青骄第二课堂
+// @author       JonyanDunh
 // @match        *://*.2-class.com/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=2-class.com
 // @grant       GM_cookie
